@@ -87,3 +87,95 @@
         background-repeat: no-repeat;
     }
 
+    /* Text Styling */
+
+    .h1
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25pt;
+        font-weight: bold;
+    }
+    .h2
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #881D50;
+        text-transform: uppercase;
+    }
+    .text-body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Page positioning------------------------------------------------------------ */
+
+    .spacer
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .hompage-pics
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .homepage-quote
+    {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .call-to-action
+    {
+        margin: 100px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .homepage-intro
+    {
+        text-align: center;
+        width: 600px;
+        line-height: 2.5 ;
+    }
+
+    .photo-hover
+    {
+        height: 550px;
+        width: auto;
+        margin: 10px;
+    
+    }
+
+    .quote
+    {
+        width: 1000px;
+        height: auto;
+    }
+
+    .button
+    {
+        height: 80px;
+        width: auto;
+        transition: .5s;
+    }
+
+    .button:hover
+    {
+        transform: scale(1.08);
+    }
+    .stronger
+    {
+        font-weight: 900;
+        
+    }
