@@ -87,3 +87,20 @@
         background-repeat: no-repeat;
     }
 
+.test
+{
+    height: 100px;
+    width: 100px;
+    border: #9E8C80;
+    border-style: solid;
+}
+
+.test1
+{   
+    
+    border: red;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
