@@ -15,3 +15,10 @@ window.addEventListener('scroll', function()
         }
     }
 )
+
+// Functionality for the slider on the video page to swap out the main video with user selection
+
+function videoUrl(vidInput)
+{
+    document.getElementById("slider").src = vidInput
+}
