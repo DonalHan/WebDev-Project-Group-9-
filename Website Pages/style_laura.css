@@ -76,7 +76,7 @@
 
     /* ABOUT STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 
-    body
+    .body
     {
         background-image: url('Resources/About Page/Background\ about.png');
         background-size: cover;
@@ -121,7 +121,12 @@
     }*/ 
 
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
-
+.body2
+{
+    background-image: url('Resources/Photography/Background\ about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .container-photo
 {
@@ -152,4 +157,11 @@ width: 300px;
 width: 700px;  
 margin: 10px auto 20px;
 display: block;
+}
+.icon{
+    display: inline; 
+}
+.icondiv{
+    text-align:center; 
+    margin:20px 30px 80px 0; 
 }
