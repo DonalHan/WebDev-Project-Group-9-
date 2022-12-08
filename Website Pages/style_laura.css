@@ -74,9 +74,9 @@
         margin-right: 50px;
     }
 
-    /* HOMEPAGE STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
+    /* ABOUT STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 
-    .body
+    body
     {
         background-image: url('Resources/Background-HomePage.png');
         background-size: cover;
@@ -89,7 +89,7 @@
         font-size: 25pt;
         font-weight: bold;
     }
-    .container 
+   /* .container-about
     { 
         display: inline-grid; 
         grid-template-areas: 
@@ -114,10 +114,18 @@
         background-repeat: no-repeat;
         border-radius: 75px; 
         
-    }
+    }*/ 
 
     .profile 
     { 
         width: 150px; 
         border-radius: 75px; 
     }
+/* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
+
+.title-photo
+{
+ margin: 30px; 
+ text-align: center; 
+ 
+}
