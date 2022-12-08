@@ -11,9 +11,12 @@
     /* Universal page padding for every page is set to 120px due to nav bar fixed position */
     body 
     {
+
         padding-top: 120px;
+
         
     }
+
 
     /* Styling for the top naviagtion bar, some animation smoothing put in for scroll event */
     .main-nav
@@ -74,7 +77,201 @@
         margin-right: 50px;
     }
 
-    /* HOMEPAGE STYLE-DONAL ------------------------------------------------------------------------------------------------*/
+    /* PACKAGE STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
 
+    .backpack {
+        background-image: url('Resources/Packages/Packages_BG.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+    }
     
-   
+    
+.packagebox {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.packcontainer {
+    display: flex;
+    gap: 100px;
+  }
+
+
+
+    .foot{
+        bottom: 1px;
+        padding: 10px;
+        background-color: #faf9f8;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        
+
+
+    }
+    
+    .footcontainer {
+        display: flex;
+        gap: 50px;
+      }
+
+
+ /* BOOKING STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
+
+      .backbook {
+        background-image: url('Resources/Bookings/Bookings_BG.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bookingbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+        height: 700px;
+        
+    }
+
+    .bookingimg{
+        width: 30%;
+        height: 100%;
+    }
+
+    #bookingform { /* formatting for the form on order page */
+       
+        text-align: center;
+        color: #881D50;
+        font-family: Helvetica, bold;
+        border-radius: 10px;
+        background: #F0ECE9;
+        padding-right: 18px;
+        padding-left:18px;
+        padding-top:15px;
+        height: 420px;
+    
+    }
+
+
+iframe{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+
+    .clearbutton
+    {
+        height: 40px;
+        width: auto;
+        transition: .5s;
+        border-radius: 3px;
+        margin-left: 5px;
+        
+    }
+
+    .clearbutton:hover
+    {
+        transform: scale(1.08);
+        cursor: pointer;
+    }
+
+    .sendbutton
+    {
+        height: 40px;
+        width: auto;
+        transition: .5s;
+        margin-left: 145px;
+        border-radius: 3px;
+    }
+
+    .sendbutton:hover
+    {
+        transform: scale(1.08);
+        cursor: pointer;
+    }
+
+
+    .bookingfooter{
+        margin-top: 55px;
+        padding: 10px;
+        background-color: #faf9f8;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        
+
+
+    }
+    
+    .bookingfootcontainer {
+        display: flex;
+        gap: 50px;
+      }
+
+
+
+
+      /* gallery effect */
+
+      .container {
+        display: flex;
+        width: 60%;
+        height: 100%; /* height of the images */
+        padding: 0% 2%;
+        box-sizing: border-box;
+
+      }
+      
+      .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 0%; /* gap between photos, set 0% to remove gap */ 
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+      }
+      
+      .box > img {
+        width: 200%; /* horizontal zoom */
+        height: calc(100%); /* setting to 200% keeps unhovered image higher up, set to 200% to massively increase vertical zoom */
+        object-fit: cover; 
+        transition: .5s;
+      }
+      
+      .box > span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+      }
+      
+      .box:hover { flex: 1 1 50%; }
+      .box:hover > img {
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+
+
+
+
+      
