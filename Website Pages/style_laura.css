@@ -74,7 +74,50 @@
         margin-right: 50px;
     }
 
-    /* HOMEPAGE STYLE-DONAL ------------------------------------------------------------------------------------------------*/
+    /* HOMEPAGE STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 
-    
+    .body
+    {
+        background-image: url('Resources/Background-HomePage.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
  
+
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25pt;
+        font-weight: bold;
+    }
+    .container 
+    { 
+        display: inline-grid; 
+        grid-template-areas: 
+        "SS" 
+        "A A A A B C"
+        "A A A A D"; 
+        grid-gap: 5px; 
+
+    }
+    .item2
+    {
+        grid-area: A; 
+       
+    }
+    .item3 
+    {
+        grid-area: B ; 
+        background-image: url("Resources/About Page/pic01.jpg"); 
+        width: 150px;  
+        height:150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 75px; 
+        
+    }
+
+    .profile 
+    { 
+        width: 150px; 
+        border-radius: 75px; 
+    }
