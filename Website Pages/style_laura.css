@@ -84,10 +84,14 @@
     }
  
 
-    h3{
+    h2{
         font-family: 'Times New Roman', Times, serif;
         font-size: 25pt;
         font-weight: bold;
+    }
+    .profile
+    {
+        display:inline; 
     }
    /* .container-about
     { 
@@ -116,16 +120,5 @@
         
     }*/ 
 
-    .profile 
-    { 
-        width: 150px; 
-        border-radius: 75px; 
-    }
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 
-.title-photo
-{
- margin: 30px; 
- text-align: center; 
- 
-}
