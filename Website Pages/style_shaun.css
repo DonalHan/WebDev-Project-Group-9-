@@ -274,27 +274,31 @@ iframe{
 
 
 
-#p1{filter: contrast(90%)}
+.p1{
+    filter: contrast(90%);
+}
 
 
-#p2{filter: contrast(90%)}
+.p2{
+    filter: contrast(90%);
+}
 
-#p3{filter: contrast(90%)}
+.p3{
+    filter: contrast(90%);
+}
 
 
-
-
-#p1:hover {
+.p1:hover {
         filter: contrast(120%);
         transition-duration: 0.5s;
 }
 
-#p2:hover {
+.p2:hover {
     filter: contrast(110%);
     transition-duration: 0.5s;
 }
 
-#p3:hover {
+.p3:hover {
     filter: contrast(120%);
     transition-duration: 0.5s;
 }
