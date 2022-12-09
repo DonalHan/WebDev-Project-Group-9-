@@ -37,3 +37,23 @@ function emailValidation(mail)
     alert("You have entered an invalid email address!")
     return (false)
 }
+
+
+function validateForm() // validates the bookingform using booleans
+{
+
+    // the user must enter a name
+    var name = document.forms["bookingform"]["name"].value;
+    if (name == null || name == "") //if name is null or blank
+    
+        alert("Please enter a name");
+        return false;
+    }
+
+
+    function videoAlert() // function will create a small notice when User selects videography
+	{
+   	if(document.getElementById('dropdown').value ==="3"){
+   new Simplert("",'As delicious as it is, this burger is extremely larurself warned.').show()
+    }
+}

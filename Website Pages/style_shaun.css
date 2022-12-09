@@ -141,12 +141,15 @@
         justify-content: center;
         gap: 90px;
         height: 700px;
+
+
         
     }
 
     .bookingimg{
         width: 30%;
         height: 100%;
+
     }
 
     #bookingform { /* formatting for the form on order page */
@@ -156,9 +159,10 @@
         font-family: Helvetica, bold;
         border-radius: 10px;
         background: #F0ECE9;
-        padding-right: 18px;
-        padding-left:18px;
-        padding-top:15px;
+        padding-right: 4px;
+        padding-left:8px;
+        padding-top:15px; /* padding top increases the spare size of the box outside from content */
+        margin-top: 15px; /* margin top pushes the whole box down to be more central on the page */
         height: 420px;
     
     }
@@ -167,8 +171,9 @@
 iframe{
     display: flex;
     flex-direction: row;
-    height: 300px;
-    width: 400px;
+    height: 260px;
+    width: 420px;
+    border-radius: 10px;
 }
 
 
@@ -231,9 +236,11 @@ iframe{
 
       .container {
         display: flex;
-        width: 60%;
-        height: 100%; /* height of the images */
-        padding: 0% 2%;
+        width: 70%;
+        height: 113.5%; /* height of the images */
+        margin-left: -50px; /* makes images fill entire page, remove to have it more central with background as border */
+        margin-top: -40px; /* makes images fill entire page, remove to have it more central with background as border */
+
         box-sizing: border-box;
 
 
@@ -338,4 +345,9 @@ iframe{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
+}
+
+
+#frame{ /* Stops form from refreshing the page ever time you submit. Display none hides the iframe */
+    display:none;
 }

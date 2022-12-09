@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="stylesheet" href="style_shaun.css">
+    <script src="simplert.js"></script>
 </head>
 
 <body class = "backbook">
@@ -63,7 +64,7 @@
 
         <div style="text-align:left">
 		<strong>Package:</strong><br>
-			<select id="dropdown2" style="width: 405px;height: 25px;"  onchange="supersize()"> <!-- descriptor for dropdown menu, onchange calls sizealert function to bring up a warning on Supersize selection -->
+			<select id="dropdown" style="width: 405px;height: 25px;"  onchange="videoAlert()"> <!-- descriptor for dropdown menu, onchange calls sizealert function to bring up a warning on Supersize selection -->
 				<option value="" disabled selected> Please Choose a package</option> <!-- disabled value stops user picking empty value, selected stops second option appearing in field on page load -->
 				<option value="1">Branding &euro;500</option> <!-- assign a 'behind the scenes' value to our options for reference later in javascript -->
 				<option value="2">Photography &euro;700</option>
@@ -79,14 +80,14 @@
         </div><br>
 	
 		
-        <input class="clearbutton" type="image" name="reset" src="Resources/Bookings/Bookings_Clear_Button.png" /> <!-- a button to reset all fields somebody might have entered if they want to change their order -->
-        <input class="sendbutton" type="image" name="submit" src="Resources/Bookings/Bookings_Send_Button.png" /> <!-- the submit button which calls the functions listed above -->
+        <input class="clearbutton" type="image" alt="image" name="reset" src="Resources/Bookings/Bookings_Clear_Button.png" /> <!-- a button to reset all fields somebody might have entered if they want to change their order -->
+        <input class="sendbutton" type="submit" alt="submit" name="submit" src="Resources/Bookings/Bookings_Send_Button.png" /> <!-- the submit button which calls the functions listed above -->
 		<!-- after pressing submit, the total cost will pop up below the button, if you enter the discount code WOW22 it will apply discount -->
 		
 		<br></br>
-		 
-        <div id="totalPrice"></div>
+        <iframe name="frame" id="frame"></iframe> 
 		</form> <!-- form concludes -->
+
 
 
 
