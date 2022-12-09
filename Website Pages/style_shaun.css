@@ -99,7 +99,7 @@
 
 .packcontainer {
     display: flex;
-    gap: 100px;
+    gap:100px;
   }
 
 
@@ -236,6 +236,7 @@ iframe{
         padding: 0% 2%;
         box-sizing: border-box;
 
+
       }
       
       .box {
@@ -273,5 +274,64 @@ iframe{
 
 
 
+#p1{filter: contrast(90%)}
 
-      
+
+#p2{filter: contrast(90%)}
+
+#p3{filter: contrast(90%)}
+
+
+
+
+#p1:hover {
+        filter: contrast(120%);
+        transition-duration: 0.5s;
+}
+
+#p2:hover {
+    filter: contrast(110%);
+    transition-duration: 0.5s;
+}
+
+#p3:hover {
+    filter: contrast(120%);
+    transition-duration: 0.5s;
+}
+
+.footer1{border-radius: 50%;}  /* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
+
+.footer2{border-radius: 50%;}
+
+.footer3{border-radius: 50%;}
+
+.footer4{border-radius: 50%;}
+
+
+.footer1:hover {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.footer2:hover {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.footer3:hover {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.footer4:hover {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
