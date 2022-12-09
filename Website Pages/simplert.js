@@ -32,16 +32,16 @@ function Simplert(type, message) {
     $messageContainer.append($alertMessage);
     // Add contents
     $alertMessage.text(message);
-    if (type.toLowerCase() === 'error') {
+    if (type.toLowerCase() === 'error') { /* ERROR */
         $title.text('Congratulations!');
         $headerContainer.css('background', 'rgba(255, 87, 87, 0.25)');
         $cancel.css('background', 'rgba(255, 87, 87, 0.20)');
-    } else if (type.toLowerCase() === 'success') {
-        $title.text('Success');
-        $headerContainer.css('background', 'rgba(95, 216, 134, 0.25)');
-        $cancel.css('background', 'rgba(95, 216, 134, 0.20)');
+    } else if (type.toLowerCase() === 'success') { /* SUCCESS OPTION */
+        $title.text('Please note');
+        $headerContainer.css('background', 'rgba(208, 94, 21, 0.9)'); /* CHANGES THE COLOUR OF THE HEADING BAR */
+        $cancel.css('background', 'rgba(95, 216, 134, 0.20)'); /* CHANGES COLOUR OF THE CANCEL SQUARE */
     } else {
-        $title.text('WARNING');
+        $title.text('WARNING'); /* WARNING OPTION */
         $headerContainer.css('background', 'rgba(85, 85, 85, 0.25)');
         $cancel.css('background', 'rgba(85, 85, 85, 0.20)');
     }
