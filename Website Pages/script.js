@@ -51,9 +51,16 @@ function validateForm() // validates the bookingform using booleans
     }
 
 
-    function videoAlert() // function will create a small notice when User selects videography
+
+
+function videoalert() // function will create a small notice when User selects videography
 	{
-   	if(document.getElementById('dropdown').value ==="3"){
-   new Simplert("",'As delicious as it is, this burger is extremely larurself warned.').show()
+   	if  (document.getElementById('dropdown2').value ==="3"){
+        new Simplert ("success",'Due to popular demand and extensive set-up requirements at least three weeks notice is required for those wishing to avail of our videography services.\n\n\n\n\n\nFor urgent cases please feel free to outline your needs in our message box and we will do our best to accomodate you!').show();
     }
 }
+
+
+
+
+
