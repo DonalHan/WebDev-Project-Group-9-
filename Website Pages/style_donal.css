@@ -11,7 +11,7 @@
     /* Universal page padding for every page is set to 120px due to nav bar fixed position */
     body 
     {
-        padding-top: 100px;
+        padding-top: 4vw;
         
     }
 
@@ -24,19 +24,21 @@
         align-items: center;
         position: fixed;
         width: 100%;
-        height: 100px;
+        height: 5vw;
         background-color: #FAF9F8;
         transition: all 300ms ease-in-out;
         z-index: 100;
+        
         
     }
 
     /* Styling for the logo */
     .logo 
     {
-        height: 50px;
+        height: 3vw;
         width: auto;
-        margin: 15px;
+        margin-top: 10px;
+        margin-left: 50px;
         transition: all 300ms ease-in-out;
     }
 
@@ -58,13 +60,15 @@
         font-weight: bolder;
         text-decoration: none;
         color: #9E8C80;
-        padding: 10px;
+        padding: 1vw;
+        font-size: 1vw;
+        
         
     }
 
     .nav-links:hover
     {
-        font-size: 15px;
+        font-size: 1.1vw;
         color: black;
         
     }
@@ -73,8 +77,11 @@
     .links
     {
         margin-right: 50px;
+        
+        
     }
 
+    
     /* HOMEPAGE STYLE-DONAL ------------------------------------------------------------------------------------------------*/
 
     
@@ -109,8 +116,21 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12pt;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 1vw;
+        
     }
+    .text-body2
+    {
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 1vw;
+        font-size: 1vw;
+        
+        
+    }
+    
 
     /* Page positioning------------------------------------------------------------------------ */
 
@@ -123,8 +143,8 @@
     .hompage-pics
     {
         display: flex;
-        justify-content: center;
-        
+        justify-content: space-between;
+        margin-top: 40px;
     
     }
     .homepage-quote
@@ -132,42 +152,53 @@
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        
 
     }
 
     .call-to-action
     {
-        margin: 100px;
+        margin: 10%;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 
     }
 
     .homepage-intro
     {
         text-align: center;
+        max-width: 100%;
         width: 600px;
         line-height: 2.5 ;
     }
 
     .photo-hover
     {
-        display: flex;
-        height: 550px;
-        width: auto;
+        
         margin: 10px;
+        width: 25%;
     
     }
+    .photo-overlap
+    {
+        
+        
+        width: auto;
+        height: 90%;
+        object-fit: contain;
+        max-width: 100%;
 
+    }
     .quote
     {
-        width: 1000px;
-        height: auto;
+        max-width: 100%;
+        width: 70%;
     }
 
     .button
     {
-        height: 80px;
+        height: 4vw;
         width: auto;
         transition: .5s;
     }
@@ -196,13 +227,19 @@
      .b1
      {
         display: flex;
+        justify-content: space-between;
+        
      }
+    
 
      section
      {
         position: relative;
-        width: 50%;
+        width: 50vw;
         height: 90vh;
+        max-width: 100%;
+        
+        
      }
 
      section video
@@ -219,12 +256,13 @@
     {
         position: absolute;
         bottom: 40px;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         z-index: 100;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .vid-thumb
@@ -254,19 +292,24 @@
     {
         width: 100px;
         height: auto;
+        max-width: 5vw;
         
     }
     .videographer
     {
-        width: 50%;
-        margin: 50px;
-        margin-left: 50px;
-        margin-top: 50px;
+        position: relative;
+        width: 50vw;
+        max-width: 100%;
+        padding: 20px; 
+        padding-top: 8vw;
         text-align: center;
         line-height: 2.5 ;
+        
+        
     }
 
     #profile-quote
     {
-        width: 600px;
+        max-width: 100%;
+        width: 70%;
     }
