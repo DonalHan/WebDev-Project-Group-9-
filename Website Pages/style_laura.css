@@ -100,20 +100,27 @@
         font-size: 25pt;
         font-weight: bold;
     }
+
+
+     /*Bootstrap Approach */ 
+        /* Profile picture css*/ 
     .profile
     {
+        margin-top: 25px; 
         margin-left:20px; 
         width:25vw; 
-        max-width: 30vh; 
+        max-width: 20vw; 
 
     }
     .button 
     {
-        margin-top: 35px;
+        margin-left:50px; 
+        margin-top: 50px;
         width: 15vw; 
-        min-width: 12vh; 
-        max-width: 20vh; 
+        min-width: 12vw; 
+        max-width: 20vw; 
     }
+    /* About- Page Text Field*/ 
     .about-Text
     {
         font-family: Arial, Helvetica, sans-serif;
@@ -122,14 +129,28 @@
         margin-bottom: 1vw;
         margin-top:40px; 
     }
+    /* Quote image styling */ 
     .img-responsive{
         width: 55vw; 
         margin-top:30px;
         
     }
+    /* Main images*/ 
+    .about-images
+    {
+        width: 40vw; 
+        margin: 10px; 
+        min-width: 300px; 
+    }
+    .about-images-div 
+    { 
+        margin-left: 100px; 
+        margin-top: 50px; 
+        margin-bottom: 50px;  
+    }
+   
     
-    /*Bootstrap Approach */ 
-    
+   
 
     /* GRID APPROACH */ 
     /*.item2
@@ -193,10 +214,13 @@ width: 700px;
 margin: 10px auto 20px;
 display: block;
 }
+/*Photography & About Page  - Footer Icons*/ 
 .icon{
     display: inline; 
+    Margin-left:10px; 
+    margin-right:10px; 
 }
 .icondiv{
     text-align:center; 
-    margin:20px 30px 80px 0; 
+    margin:80px 30px 120px 0; 
 }
