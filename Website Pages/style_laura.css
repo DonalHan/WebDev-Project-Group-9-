@@ -11,7 +11,7 @@
     /* Universal page padding for every page is set to 120px due to nav bar fixed position */
     body 
     {
-        padding-top: 120px;
+        padding-top: 4vw;
         
     }
 
@@ -24,18 +24,21 @@
         align-items: center;
         position: fixed;
         width: 100%;
-        height: 100px;
+        height: 5vw;
         background-color: #FAF9F8;
         transition: all 300ms ease-in-out;
+        z-index: 100;
+        
         
     }
 
     /* Styling for the logo */
     .logo 
     {
-        height: 50px;
+        height: 3vw;
         width: auto;
-        margin: 15px;
+        margin-top: 10px;
+        margin-left: 50px;
         transition: all 300ms ease-in-out;
     }
 
@@ -57,13 +60,15 @@
         font-weight: bolder;
         text-decoration: none;
         color: #9E8C80;
-        padding: 10px;
+        padding: 1vw;
+        font-size: 1vw;
+        
         
     }
 
     .nav-links:hover
     {
-        font-size: 15px;
+        font-size: 1.1vw;
         color: black;
         
     }
@@ -72,15 +77,21 @@
     .links
     {
         margin-right: 50px;
+        
+        
     }
+
 
     /* ABOUT STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 
     .body
     {
         background-image: url('Resources/About Page/Background\ about.png');
-        background-size: cover;
+        background-size:cover; 
         background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
  
 
@@ -91,34 +102,58 @@
     }
     .profile
     {
-        display:inline; 
+        margin-left:20px; 
+        width:25vw; 
+        max-width: 30vh; 
+
     }
-   /* .container-about
+    .button 
+    {
+        margin-top: 35px;
+        width: 15vw; 
+        min-width: 12vh; 
+        max-width: 20vh; 
+    }
+    .about-Text
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 1vw;
+        margin-top:40px; 
+    }
+    .img-responsive{
+        width: 55vw; 
+        margin-top:30px;
+        
+    }
+    
+    /*Bootstrap Approach */ 
+    
+
+    /* GRID APPROACH */ 
+    /*.item2
     { 
         display: inline-grid; 
         grid-template-areas: 
-        "SS" 
-        "A A A A B C"
-        "A A A A D"; 
+        
+        "A A . B"
+        "A A ."
+        ". c ."; 
         grid-gap: 5px; 
 
     }
-    .item2
+    .text
     {
         grid-area: A; 
        
     }
-    .item3 
+    .profile 
     {
         grid-area: B ; 
         background-image: url("Resources/About Page/pic01.jpg"); 
-        width: 150px;  
-        height:150px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 75px; 
-        
-    }*/ 
+        width: 150px;   
+    } */ 
 
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 .body2
@@ -142,7 +177,7 @@
     width: 1fr 1fr 1fr 1fr; 
     margin: 5px;  
 }
-.div:hover , .img:hover
+ .img:hover
 {
     border-radius: 50px; 
     border-color: #D05E15; 
