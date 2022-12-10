@@ -11,12 +11,8 @@
     /* Universal page padding for every page is set to 120px due to nav bar fixed position */
     body 
     {
-
-        padding-top: 120px;
-
-        
+        padding-top: 4vw;
     }
-
 
     /* Styling for the top naviagtion bar, some animation smoothing put in for scroll event */
     .main-nav
@@ -27,18 +23,21 @@
         align-items: center;
         position: fixed;
         width: 100%;
-        height: 100px;
+        height: 5vw;
         background-color: #FAF9F8;
         transition: all 300ms ease-in-out;
+        z-index: 100;
+        
         
     }
 
     /* Styling for the logo */
     .logo 
     {
-        height: 50px;
+        height: 3vw;
         width: auto;
-        margin: 15px;
+        margin-top: 10px;
+        margin-left: 50px;
         transition: all 300ms ease-in-out;
     }
 
@@ -60,13 +59,15 @@
         font-weight: bolder;
         text-decoration: none;
         color: #9E8C80;
-        padding: 10px;
+        padding: 1vw;
+        font-size: 1vw;
+        
         
     }
 
     .nav-links:hover
     {
-        font-size: 15px;
+        font-size: 1.1vw;
         color: black;
         
     }
@@ -75,6 +76,8 @@
     .links
     {
         margin-right: 50px;
+        
+        
     }
 
     /* PACKAGE STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
@@ -89,265 +92,320 @@
     }
     
     
-.packagebox {
+    .packagebox {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    }
 
-.packcontainer {
+
+    .packcontainer {
     display: flex;
     gap:100px;
-  }
-
-
-
-    .foot{
-        bottom: 1px;
-        padding: 10px;
-        background-color: #faf9f8;
-        margin: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        
-
-
     }
+
+
+    .foot {
+    bottom: 1px;
+    padding: 10px;
+    background-color: #faf9f8;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    }
+        
     
     .footcontainer {
-        display: flex;
-        gap: 50px;
-      }
+    display: flex;
+    gap: 50px;
+    }
+
+
+    .bookingfooter{
+    margin-top: 55px;
+    padding: 10px;
+    background-color: #faf9f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    }
+    
+    
+    .bookingfootcontainer {
+    display: flex;
+    gap: 50px;
+    }
+
 
 
  /* BOOKING STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
 
-      .backbook {
-        background-image: url('Resources/Bookings/Bookings_BG.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-repeat: no-repeat;
+    .backbook {
+    background-image: url('Resources/Bookings/Bookings_BG.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
     }
+
 
     .bookingbox{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 90px;
-        height: 700px;
-
-
-        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    height: 700px; 
     }
+
 
     .bookingimg{
-        width: 30%;
-        height: 100%;
-
+    width: 30%;
+    height: 100%;
     }
+
 
     #bookingform { /* formatting for the form on order page */
-       
-        text-align: center;
-        color: #881D50;
-        font-family: Helvetica, bold;
-        border-radius: 10px;
-        background: #F0ECE9;
-        padding-right: 4px;
-        padding-left:8px;
-        padding-top:15px; /* padding top increases the spare size of the box outside from content */
-        margin-top: 15px; /* margin top pushes the whole box down to be more central on the page */
-        height: 420px;
-    
+    text-align: center;
+    color: #881D50;
+    font-family: Helvetica, sans-serif;
+    border-radius: 10px;
+    background: #F0ECE9;
+    padding-right: 4px;
+    padding-left:8px;
+    padding-top:15px; /* padding top increases the spare size of the box outside from content */
+    margin-top: 35px; /* margin top pushes the whole box down to be more central on the page */
+    height: 420px;
     }
 
 
-iframe{
+    iframe{
     display: flex;
     flex-direction: row;
     height: 260px;
     width: 420px;
     border-radius: 10px;
-}
-
-
-
-
-    .clearbutton
-    {
-        height: 40px;
-        width: auto;
-        transition: .5s;
-        border-radius: 3px;
-        margin-left: 5px;
-        
-    }
-
-    .clearbutton:hover
-    {
-        transform: scale(1.08);
-        cursor: pointer;
-    }
-
-    .sendbutton
-    {
-        height: 40px;
-        width: auto;
-        transition: .5s;
-        margin-left: 145px;
-        border-radius: 3px;
-    }
-
-    .sendbutton:hover
-    {
-        transform: scale(1.08);
-        cursor: pointer;
     }
 
 
-    .bookingfooter{
-        margin-top: 55px;
-        padding: 10px;
-        background-color: #faf9f8;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
+/* Order Page Buttons */
+
+    
+    .clearbtn {
+    height: 40px;
+    width: auto;
+    transition: .5s;
+    border-radius: 3px;
+    margin-left: 5px;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+
+    @media (min-width: 768px) {
+    .clearbtn {
+    padding: 10px 30px;
+    }
+    }
         
 
+    .clearbtn:hover
+    {
+    transform: scale(1.02);
+    cursor: pointer;
+    filter: contrast(1.2);
+    }
 
+
+    .sendbtn{
+    height: 40px;
+    width: auto;
+    transition: .5s;
+    margin-left: 145px;
+    border-radius: 3px;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+      
+      
+    @media (min-width: 768px) {
+    .sendbtn {
+    padding: 10px 30px;
+    }
+    }
+
+
+    .sendbtn:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    filter: contrast(1.2);
+    }
+
+
+
+
+
+    /* Booking page gallery effect */
+
+    .container {
+    display: flex;
+    width: 70%;
+    height: 113.5%; /* height of the images */
+    margin-left: -50px; /* makes images fill entire page, remove to have it more central with background as border */
+    margin-top: -40px; /* makes images fill entire page, remove to have it more central with background as border */
+    box-sizing: border-box;
+    }
+      
+
+    .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 0%; /* gap between photos, set 0% to remove gap */ 
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
     }
     
-    .bookingfootcontainer {
-        display: flex;
-        gap: 50px;
-      }
 
-
-
-
-      /* gallery effect */
-
-      .container {
-        display: flex;
-        width: 70%;
-        height: 113.5%; /* height of the images */
-        margin-left: -50px; /* makes images fill entire page, remove to have it more central with background as border */
-        margin-top: -40px; /* makes images fill entire page, remove to have it more central with background as border */
-
-        box-sizing: border-box;
-
-
-      }
+    .box > img {
+    width: 200%; /* horizontal zoom */
+    height: calc(100%); /* setting to 200% keeps unhovered image higher up, set to 200% to massively increase vertical zoom */
+    object-fit: cover; 
+    transition: .5s;
+    }
       
-      .box {
-        flex: 1;
-        overflow: hidden;
-        transition: .5s;
-        margin: 0 0%; /* gap between photos, set 0% to remove gap */ 
-        box-shadow: 0 20px 30px rgba(0,0,0,.1);
-        line-height: 0;
-      }
+
+    .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    }
       
-      .box > img {
-        width: 200%; /* horizontal zoom */
-        height: calc(100%); /* setting to 200% keeps unhovered image higher up, set to 200% to massively increase vertical zoom */
-        object-fit: cover; 
-        transition: .5s;
-      }
-      
-      .box > span {
-        font-size: 3.8vh;
-        display: block;
-        text-align: center;
-        height: 10vh;
-        line-height: 2.6;
-      }
-      
-      .box:hover { flex: 1 1 50%; }
-      .box:hover > img {
-        width: 100%;
-        height: 100%;
-      }
+
+    .box:hover {
+    flex: 1 1 50%;
+    }
+
+
+    .box:hover > img {
+    width: 100%;
+    height: 100%;
+    }
 
 
 
-
-
-
-.p1{
+    .p1 {
     filter: contrast(90%);
-}
+    }
 
 
-.p2{
+    .p2 {
     filter: contrast(90%);
-}
+    }
 
-.p3{
+
+    .p3 {
     filter: contrast(90%);
-}
+    }
 
 
-.p1:hover {
-        filter: contrast(120%);
-        transition-duration: 0.5s;
-}
-
-.p2:hover {
-    filter: contrast(110%);
-    transition-duration: 0.5s;
-}
-
-.p3:hover {
+    .p1:hover {
     filter: contrast(120%);
     transition-duration: 0.5s;
-}
-
-.footer1{border-radius: 50%;}  /* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
-
-.footer2{border-radius: 50%;}
-
-.footer3{border-radius: 50%;}
-
-.footer4{border-radius: 50%;}
+    }
 
 
-.footer1:hover {
+    .p2:hover {
+    filter: contrast(110%);
+    transition-duration: 0.5s;
+    }
+
+
+    .p3:hover {
+    filter: contrast(120%);
+    transition-duration: 0.5s;
+    }
+
+
+    .footer1{border-radius: 50%;}  /* images were circular pngs but for some reason appeared square. */
+    .footer2{border-radius: 50%;}  /* border radius 50% workout makes them rounded */
+    .footer3{border-radius: 50%;}
+    .footer4{border-radius: 50%;}
+
+
+    .footer1:hover {
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
-}
+    }
 
-.footer2:hover {
+
+    .footer2:hover {
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
-}
+    }
 
-.footer3:hover {
+
+    .footer3:hover {
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
-}
+    }
 
-.footer4:hover {
+
+    .footer4:hover {
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
-}
+    }
 
 
-#frame{ /* Stops form from refreshing the page ever time you submit. Display none hides the iframe */
+    #frame{ /* Stops form from refreshing the page ever time you submit. Display none hides the iframe */
     display:none;
-}
+    }

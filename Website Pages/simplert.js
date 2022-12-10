@@ -33,12 +33,12 @@ function Simplert(type, message) {
     // Add contents
     $alertMessage.text(message);
     if (type.toLowerCase() === 'error') { /* ERROR */
-        $title.text('Congratulations!');
-        $headerContainer.css('background', 'rgba(255, 87, 87, 0.25)');
+        $title.text('Oops!');
+        $headerContainer.css('background', 'rgba(208, 94, 21, 0.5)');
         $cancel.css('background', 'rgba(255, 87, 87, 0.20)');
     } else if (type.toLowerCase() === 'success') { /* SUCCESS OPTION */
         $title.text('Please note');
-        $headerContainer.css('background', 'rgba(208, 94, 21, 0.9)'); /* CHANGES THE COLOUR OF THE HEADING BAR */
+        $headerContainer.css('background', 'rgba(208, 94, 21, 0.5)'); /* CHANGES THE COLOUR OF THE HEADING BAR */
         $cancel.css('background', 'rgba(95, 216, 134, 0.20)'); /* CHANGES COLOUR OF THE CANCEL SQUARE */
     } else {
         $title.text('WARNING'); /* WARNING OPTION */

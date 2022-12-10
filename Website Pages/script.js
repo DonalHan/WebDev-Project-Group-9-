@@ -32,37 +32,65 @@
 
 
 //(WORK PACKAGES: SHAUN KALAGIN)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    // Email validation
+    
+    /* EMail Validation
+    Using regular expression to ensure that a proper format was entered for email field
+    basic breakdown is a String + @ + String + . + string
+    allowance made for 'triple barreled' domains like like @student.ncirl.ie
+    more detailed description of regexp code in report.
+    */
 
-    function emailValidation(mail) 
+    function emailValidation() 
     {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value))
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value)) // different to below method, calling the regexp test() method directly to the value of email in bookingform
     {
         return (true)
     }
-        alert("You have entered an invalid email address!")
+    new Simplert("error", "Please enter a valid e-mail address.").show(); // create jquery warning if values don't match regexp acceptable values
         return (false)
     }
 
+    /* Name validation
+    Again, done using regular expression with more detailed breakdown in report.
+    First name and last name required, two strings separated by a space, no special characters allowed
+    excepting ' and - because some last names have them e.g John Smith-doe or Grace O'Malley
+    */
 
-    function validateForm() // validates the bookingform using booleans
+    function validateName()
     {
 
-        // the user must enter a name
-        var name = document.forms["bookingform"]["name"].value;
-        if (name == null || name == "") //if name is null or blank
-        
-            alert("Please enter a name");
+        var regName = /^[a-zA-Z]+ [a-zA-Z'-]+$/; // regular expression, " - " and " ' " included in the last name portion in order to accommodate double barrel names + e.g O'Malleys
+        var name = document.forms["bookingform"]["name"].value; // variable name is equal to name in bookingform
+        if(!regName.test(name)){ // conditional if name does not equal to the acceptable values in var regName
+            new Simplert("error", 'Please provide your first and last name').show();
+            document.getElementById('name').focus();
             return false;
+        }else{
+            console.log('Valid name given.'); 
+            return true;
         }
+    }
 
 
+    /* Simple jQuery alert 'Simplert' from user 'thestevenmick' publish on GitHub
+    adjustments made to suit styling of our project, comments explaining functionality found in 'simplert.js'
+    N.B Discovery of backslash to allow for neater coding, can linebreak code without disrupting its function
+    N.B \u00A0 is the equivalent of non-breaking space in javascript. Below code is very unattractive, but the
+    only way I found possible to separate the alert message into seperate lines. \n was tried but could not get it to work.
+    Below code I accept is unattractive, but functional.
+    */
 
-
-    function videoalert() // function will create a small notice when User selects videography
+    function videoalert() // function will create a small notice when User selects videography using Jquery 'Simplerts' 
         {
-        if  (document.getElementById('dropdown2').value ==="3"){
-            new Simplert ("success",'Due to popular demand and extensive set-up requirements at least three weeks notice is required for those wishing to avail of our videography services.\n\n\n\n\n\nFor urgent cases please feel free to outline your needs in our message box and we will do our best to accomodate you!').show();
+        if  (document.getElementById('dropdown2').value ==="3"){ // conditional to ensure function only happens once dropdown item with value 3 selected (videography) */
+            new Simplert ("success",'Due to popular demand and extensive set-up requirements at least three weeks notice is required \
+             for those wishing to avail of our videography services.\
+             \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \
+             \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \
+             \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \
+             \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \
+             \u00A0\u00A0\u00A0\u00A0 \
+            For urgent cases please feel free to outline your needs in our message box and we will do our best to accomodate you!').show();
         }
     }
 

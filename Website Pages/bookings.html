@@ -49,7 +49,7 @@
 
 
 
-		<form name="bookingform" id="bookingform" onsubmit="return !! validateForm()& emailValidation();return false" target="frame">
+		<form name="bookingform" id="bookingform" onsubmit="return !! validateName()& emailValidation();return false" target="frame">
 		<!-- when user clicks on the submit button will call two js functions to validate input and calculate the price of the order -->
 		<!-- target frame specifies where to display response after clicking submit, in this case at the bottom, stops the form from refreshing -->
 				<div style="text-align:left">
@@ -74,13 +74,13 @@
 
         <div style="text-align: left"> <!-- Quantity field layout below -->
           <strong> Message:</strong> <br>
-			<textarea name="quantity" id="quantity" style="width: 400px;height: 120px;"></textarea>
+			<textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea>
         
         </div><br>
 	
 		
-        <input class="clearbutton" type="image" alt="image" name="reset" src="Resources/Bookings/Bookings_Clear_Button.png" /> <!-- a button to reset all fields somebody might have entered if they want to change their order -->
-        <input class="sendbutton" type="submit" alt="submit" name="submit" src="Resources/Bookings/Bookings_Send_Button.png" /> <!-- the submit button which calls the functions listed above -->
+        <input class="clearbtn" type="reset"  name="reset"  /> <!-- a button to reset all fields somebody might have entered if they want to change their order -->
+        <input class="sendbtn" type="submit"  name="submit"  /> <!-- the submit button which calls the functions listed above -->
 		<!-- after pressing submit, the total cost will pop up below the button, if you enter the discount code WOW22 it will apply discount -->
 		
 		<br></br>
@@ -102,6 +102,9 @@
 
 
 
+    
+</body>
+
 <footer class="bookingfooter">
     <div class= "bookingfootcontainer">
     
@@ -111,12 +114,6 @@
         <a href ="https://facebook.com/"><img class="footer4" src="Resources/Packages/fb.png" alt="social-4 Failed to load"></a>
     </div>
 </footer>
-
-
-    
-</body>
-
-
 
 
 </html>
