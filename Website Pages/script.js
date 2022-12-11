@@ -37,16 +37,19 @@
     Using regular expression to ensure that a proper format was entered for email field
     basic breakdown is a String + @ + String + . + string
     allowance made for 'triple barreled' domains like like @student.ncirl.ie
-    more detailed description of regexp code in report.
     */
 
-    function emailValidation() 
+    function emailValidation() {
+    // line below calling the regexp test() method directly to the value of email in bookingform
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value)) 
     {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value)) // different to below method, calling the regexp test() method directly to the value of email in bookingform
-    {
+    // console message if boolean value returns true, email matches regular expression
+    // console message used to not create unnecessary clutter on true result
+    console.log('User provided a valid EMail'); 
         return (true)
     }
-    new Simplert("error", "Please enter a valid e-mail address.").show(); // create jquery warning if values don't match regexp acceptable values
+    // create jquery warning if values don't match regexp acceptable values
+    new Simplert("error", "Please enter a valid e-mail address.").show(); 
         return (false)
     }
 
@@ -58,21 +61,23 @@
 
     function validateName()
     {
-
-        var regName = /^[a-zA-Z]+ [a-zA-Z'-]+$/; // regular expression, " - " and " ' " included in the last name portion in order to accommodate double barrel names + e.g O'Malleys
-        var name = document.forms["bookingform"]["name"].value; // variable name is equal to name in bookingform
-        if(!regName.test(name)){ // conditional if name does not equal to the acceptable values in var regName
+        // regular expression, " - " and " ' " included in the last name portion to accommodate double barrel names + e.g O'Malleys
+        var regName = /^[a-zA-Z]+ [a-zA-Z'-]+$/;
+        // variable name is equal to name in bookingform
+        var name = document.forms["bookingform"]["name"].value;
+        // conditional if name does not equal to the acceptable values in var regName
+        if(!regName.test(name)){ 
             new Simplert("error", 'Please provide your first and last name').show();
-            document.getElementById('name').focus();
+            document.getElementById(name).focus();
             return false;
         }else{
-            console.log('Valid name given.'); 
+            console.log('User provided a valid name'); 
             return true;
         }
     }
 
 
-    /* Simple jQuery alert 'Simplert' from user 'thestevenmick' publish on GitHub
+    /* Simple jQuery alert 'Simplert' from user 'thestevenmick' publish on GitHub.
     adjustments made to suit styling of our project, comments explaining functionality found in 'simplert.js'
     N.B Discovery of backslash to allow for neater coding, can linebreak code without disrupting its function
     N.B \u00A0 is the equivalent of non-breaking space in javascript. Below code is very unattractive, but the
