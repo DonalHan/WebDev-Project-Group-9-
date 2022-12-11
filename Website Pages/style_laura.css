@@ -151,32 +151,6 @@
         margin-bottom: 50px;  
     }
    
-    
-   
-
-    /* GRID APPROACH */ 
-    /*.item2
-    { 
-        display: inline-grid; 
-        grid-template-areas: 
-        
-        "A A . B"
-        "A A ."
-        ". c ."; 
-        grid-gap: 5px; 
-
-    }
-    .text
-    {
-        grid-area: A; 
-       
-    }
-    .profile 
-    {
-        grid-area: B ; 
-        background-image: url("Resources/About Page/pic01.jpg"); 
-        width: 150px;   
-    } */ 
 
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 .body2
@@ -227,4 +201,8 @@ display: block;
 .icondiv{
     text-align:center; 
     margin:80px 30px 120px 0; 
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
