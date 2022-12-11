@@ -167,8 +167,8 @@
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
 .body2
 {
-    background-image: url('Resources/Photography/Background\ about.png');
-    background-size: cover;
+    background-image: url('../images/Background\ about.png');
+    background-size:auto; 
     background-repeat: no-repeat;
 }
 
@@ -196,6 +196,7 @@
 {
 width: 300px; 
 }
+/*  About page header */ 
 .header
 { 
 
@@ -204,7 +205,7 @@ min-width: 500px;
 margin: 80px auto 50px;
 display: block;
 }
-/*Photography & About Page  - Footer Icons*/ 
+/*--------Photography & About Page  - Footer Icons -----------------------------------------------------*/ 
 .icon{
     display: inline; 
     Margin-left:10px; 
