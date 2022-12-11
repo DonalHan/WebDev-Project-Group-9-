@@ -113,6 +113,7 @@
         min-width: 150px; 
 
     }
+    /*Navigation Button styling*/ 
     .button 
     {
         margin-left:50px; 
@@ -206,3 +207,34 @@ display: block;
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
+/*.footercontainer {
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+    background-color: #f0f0f0;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+}
+
+.icondiv {
+
+display: flex;
+
+gap: 50px;
+
+}*/ 
