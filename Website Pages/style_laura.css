@@ -113,6 +113,7 @@
         min-width: 150px; 
 
     }
+    /*Navigation Button styling*/ 
     .button 
     {
         margin-left:50px; 
@@ -203,6 +204,8 @@ display: block;
     margin:80px 30px 120px 0; 
 }
 .icon:hover {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
