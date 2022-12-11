@@ -95,8 +95,10 @@
     }
  
 
-    h2{
-        font-family: 'Times New Roman', Times, serif;
+     /* About page Heading  styling*/ 
+    .display-4{
+        margin-top: 50px; 
+        margin-left: 60px; 
         font-size: 25pt;
         font-weight: bold;
     }
@@ -121,11 +123,19 @@
         width: 15vw; 
         min-width: 150px; 
         max-width: 20vw; 
+        transition: .5s;
+
+    }
+    /* Navigation button on hover */ 
+    .button:hover
+    {
+        transform: scale(1.08);
+        cursor: pointer;
     }
     /* About- Page Text Field*/ 
     .about-Text
     {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
         font-size: 12pt;
         font-weight: bold;
         margin-bottom: 1vw;
@@ -151,6 +161,7 @@
         margin-top: 50px; 
         margin-bottom: 50px;  
     }
+   
    
 
 /* PHOTOGRAPHY STYLE-LAURA  ------------------------------------------------------------------------------------------------*/
