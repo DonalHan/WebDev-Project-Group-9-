@@ -165,8 +165,7 @@
     font-family: Helvetica, sans-serif;
     border-radius: 10px;
     background: #F0ECE9;
-    padding-right: 4px;
-    padding-left:8px;
+    padding-left:12px;
     padding-top:15px; /* padding top increases the spare size of the box outside from content */
     margin-top: 35px; /* margin top pushes the whole box down to be more central on the page */
     height: 420px;
@@ -174,6 +173,8 @@
 
 
     iframe{
+
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     height: 260px;
