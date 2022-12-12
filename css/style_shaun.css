@@ -276,10 +276,6 @@
     filter: contrast(1.2);
     }
 
-
-
-
-
     /* Booking page gallery effect */
 
     .container {
@@ -290,7 +286,7 @@
     margin-top: -40px; /* makes images fill entire page, remove to have it more central with background as border */
     box-sizing: border-box;
     }
-      
+
 
     .box {
     flex: 1;
