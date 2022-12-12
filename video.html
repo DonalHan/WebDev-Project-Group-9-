@@ -13,7 +13,8 @@
         </script>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <!-- META TAG FOR SEO-->
             <meta name="description" content="Tasty Treat - Food Stylists. We do:  Food Photography, Food Videography, as well as advertisements for fast food companies ,  and drink ads " class="seo-meta-tag" >
             <title href="">Food Stylists:Tasty Treat - Video Page</title>
             <link rel="stylesheet" href="./css/style_donal.css">
@@ -21,8 +22,8 @@
             
         </head>
 
-<body class="bodyvideo">
-    <nav class="main-nav">
+<body class="bodyvideo"> <!-- Background image installed here-->
+    <nav class="main-nav"> <!-- Main navigation container (please refer to the index page for breakdown of comments here) (WORK PACKAGE: DONAL HANWAY)---------------------------------------------------------->
         <a href="index.html">
             <img class="logo" src="./images/Navigation Logo.png" alt="">
         </a>
@@ -35,17 +36,18 @@
             <a class="nav-links" href="bookings.html">Bookings</a>
         </nav>
     </nav>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js"></script> <!-- script for the navigation manipulation, doesnt work in head-->
 
+    <!-- THE MAIN BODY OF THE VIDEO PAGE (WORK PACKAGE: DONAL HANWAY) --------------------------------------------------------------------------------------------------->
     <div class="b1">
-        <div class="contains">
+        <div class="contains"> 
             <section>
 
-                <video id="slider" autoplay muted loop>
+                <video id="slider" autoplay muted loop> <!-- The main container that holds the videos the user selects positioned screen left-->
                     <source src="./videos/vid 1.mp4" type="video/mp4">
                 </video>
 
-                <ul class="navigation">
+                <ul class="navigation"> <!-- The main navigation that holds the the thumbnails for selecting a video(please see JS fil for onclick function)-->
                     <li onclick = "videoUrl('/videos/vid 1.mp4')"><img class="vid-thumb" src="images/Thumbnail 1.png" alt=""></li>
                     <li onclick = "videoUrl('/videos/vid 2.mp4')"><img class="vid-thumb" src="images/Thumbnail 2.png" alt=""></li>
                     <li onclick = "videoUrl('/videos/vid 3.mp4')"><img class="vid-thumb" src="images/Thumbnail 3.png" alt=""></li>
@@ -55,12 +57,12 @@
             </section>
         </div>
             
-        <div class="videographer">
+        <div class="videographer"> <!-- Call to action container positioned screen right-->
 
             <img id="profile-quote" src="./images/Quote and Picture.png" alt="">
 
-            <br>
-            <br>
+            <br> <!-- Line break for positioning-->
+            <br> <!-- Line break for positioning-->
 
 
             <div class="text-body2">
@@ -71,10 +73,10 @@
                 Nothing speaks louder than a dynamic video to get your product into peoples minds
             </div>
 
-            <br>
-            <br>
+            <br> <!-- Line break for positioning-->
+            <br> <!-- Line break for positioning-->
 
-            <a href="bookings.html">
+            <a href="bookings.html"> <!-- call to action button that leads to the booking page-->
             <img class="button" src="./images/Enquiry_Button.jpg" alt="Enquiry">
             </a>
 
