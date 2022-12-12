@@ -17,113 +17,107 @@
     /* Styling for the top naviagtion bar, some animation smoothing put in for scroll event */
     .main-nav
     {
-        display: flex;
-        top: 0;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        height: 5vw;
-        background-color: #FAF9F8;
-        transition: all 300ms ease-in-out;
-        z-index: 100;
-        
-        
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 5vw;
+    background-color: #FAF9F8;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
     }
 
     /* Styling for the logo */
     .logo 
     {
-        height: 3vw;
-        width: auto;
-        margin-top: 10px;
-        margin-left: 50px;
-        transition: all 300ms ease-in-out;
+    height: 3vw;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    transition: all 300ms ease-in-out;
     }
 
     /* An appendment class for styling nav bar when the user scrolls */
     .small
     {
-        height: 50px;
+    height: 50px;
     }
 
     /* An appendment class for styling the logo when the user scrolls */
     .logo-small
     {
-        height: 25px; 
+    height: 25px; 
     }
 
     /* Styling for the navigation links */
     .nav-links
     {
-        font-weight: bolder;
-        text-decoration: none;
-        color: #9E8C80;
-        padding: 1vw;
-        font-size: 1vw;
-        
-        
+    font-weight: bolder;
+    text-decoration: none;
+    color: #9E8C80;
+    padding: 1vw;
+    font-size: 1vw;
+
     }
 
     .nav-links:hover
     {
-        font-size: 1.1vw;
-        color: black;
-        
+    font-size: 1.1vw;
+    color: black;
     }
 
     /* Postioning nav links */
     .links
     {
-        margin-right: 50px;
-        
-        
+    margin-right: 50px;
     }
 
     /* PACKAGE STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
 
     .pagecontainer{
-        height: 100%;
-        width: 100%;
+    height: 100%;
+    width: 100%;
     }
 
     .backpack {
-        background-image: url('/images/Packages_BG.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-repeat: no-repeat;
+    background-image: url('/images/Packages_BG.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
     }
     
     
     .packagebox {
     margin-top: 60px;
-    text-align: center;
     display: flex;
     flex-direction: row;
-    }
-
-
-    .packcontainer {
-    display: flex;
-    gap:100px;
     justify-content: center;
     }
 
 
+    .packcontainer {
+    display:flex;
+
+    gap:120px;
+    }
+
+
     .footercontainer {
-        padding-top: 10px;
-        padding-bottom: 2px;
-        background-color: #f0f0f0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        height: 8%;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 8%;
     }
         
     
@@ -330,7 +324,7 @@
 
     .p1 {
     filter: contrast(90%);
-    height: 68%;
+    height: 100%;
     width: 100%;
 
     }
@@ -338,7 +332,7 @@
 
     .p2 {
     filter: contrast(90%);
-    height: 68%;
+    height: 100%;
     width: 100%;
 
     }
@@ -346,7 +340,7 @@
 
     .p3 {
     filter: contrast(90%);
-    height: 68%;
+    height: 100%;
     width: 100%;
 
     }
