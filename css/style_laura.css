@@ -86,7 +86,7 @@
 
     .body
     {
-        background-image: url('Resources/About Page/Background\ about.png');
+        background-image: url('/images/Background\ about.png');
         background-size:cover; 
         background-repeat: no-repeat;
         -webkit-background-size: cover;

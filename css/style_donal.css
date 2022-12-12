@@ -87,7 +87,7 @@
     
     .bodyhome 
     {
-        background-image: url('Resources/Background-HomePage.png');
+        background-image: url('/images/Background-HomePage.png');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -217,7 +217,7 @@
 
     .bodyvideo 
     {
-        background-image: url('Resources/Video/Video_Page_BG.jpg');
+        background-image: url('/images/Video_Page_BG.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;

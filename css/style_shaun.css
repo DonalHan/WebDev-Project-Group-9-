@@ -87,7 +87,7 @@
     }
 
     .backpack {
-        background-image: url('Resources/Packages/Packages_BG.jpg');
+        background-image: url('/images/Packages_BG.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -135,7 +135,7 @@
  /* BOOKING STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
 
     .backbook {
-    background-image: url('Resources/Bookings/Bookings_BG.jpg');
+    background-image: url('/images/Bookings_BG.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
