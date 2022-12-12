@@ -66,7 +66,7 @@
         
     }
 
-    .nav-links:hover
+    .nav-links:hover /* Hover effect for links */
     {
         font-size: 1.1vw;
         color: black;
@@ -85,7 +85,7 @@
     /* HOMEPAGE STYLE-DONAL ------------------------------------------------------------------------------------------------*/
 
     
-    .bodyhome 
+    .bodyhome  /* Home Page background */
     {
         background-image: url('/images/Background-HomePage.png');
         background-size: cover;
@@ -97,13 +97,13 @@
 
     /* Text Styling */
 
-    .h1
+    .h1 /* Styling for titles */
     {
         font-family: 'Times New Roman', Times, serif;
         font-size: 25pt;
         font-weight: bold;
     }
-    .h2
+    .h2 /* Styling for subtitles */
     {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12pt;
@@ -111,7 +111,7 @@
         color: #881D50;
         text-transform: uppercase;
     }
-    .text-body
+    .text-body /* Styling fortext body */
     {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12pt;
@@ -119,7 +119,7 @@
         margin-bottom: 1vw;
         
     }
-    .text-body2
+    .text-body2 /* Styling for alt text body */
     {
         
         font-family: Arial, Helvetica, sans-serif;
@@ -134,20 +134,20 @@
 
     /* Page positioning------------------------------------------------------------------------ */
 
-    .spacer
+    .spacer /* A spacer element for positioning and responsiveness */
     {
         width: 10px;
         height: 10px;
     }
 
-    .hompage-pics
+    .hompage-pics /* sizing and responsiveness for hompage images */
     {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
     
     }
-    .homepage-quote
+    .homepage-quote /* sizing and responsiveness for hompage quote image */
     {
         margin-top: 30px;
         display: flex;
@@ -156,7 +156,7 @@
 
     }
 
-    .call-to-action
+    .call-to-action /* positioning and responsiveness for hompage call to action secton */
     {
         margin: 10%;
         display: flex;
@@ -165,7 +165,7 @@
 
     }
 
-    .homepage-intro
+    .homepage-intro /* sizing and responsiveness for hompage text */
     {
         text-align: center;
         max-width: 100%;
@@ -173,14 +173,14 @@
         line-height: 2.5 ;
     }
 
-    .photo-hover
+    .photo-hover /* sizing for hompage photo */
     {
         
         margin: 10px;
         width: 25%;
     
     }
-    .photo-overlap
+    .photo-overlap  /* sizing for hompage photo */
     {
         
         
@@ -190,32 +190,32 @@
         max-width: 100%;
 
     }
-    .quote
+    .quote /* sizing for hompage quote */
     {
         max-width: 100%;
         width: 70%;
     }
 
-    .button
+    .button /* sizing and responsiveness for hompage button */
     {
         height: 4vw;
         width: auto;
         transition: .5s;
     }
 
-    .button:hover
+    .button:hover /* Hover effect for button */
     {
         transform: scale(1.08);
         cursor: pointer;
     }
-    .stronger
+    .stronger /* Specific bold font */
     {
         font-weight: 900;
         
     }
-/* Video Page---------------------------------------------------------------------------------------- */
-
-    .bodyvideo 
+/* Video Page---------------------------------------------------------------------------------------------------------------------- */
+    
+    .bodyvideo /* Video Page background */
     {
         background-image: url('/images/Video_Page_BG.jpg');
         background-size: cover;
@@ -224,7 +224,7 @@
         -o-background-size: cover;
         background-repeat: no-repeat;
     }
-     .b1
+     .b1 /* Making the body responsive with flex */
      {
         display: flex;
         justify-content: space-between;
@@ -232,7 +232,7 @@
      }
     
 
-     section
+     section /* Styling and positioning for screen left */
      {
         position: relative;
         width: 50vw;
@@ -242,7 +242,7 @@
         
      }
 
-     section video
+     section video /* Styling and positioning for the video section */
     {
         position: absolute;
         top: 0px;
@@ -252,7 +252,7 @@
         object-fit: cover;
     }
 
-    section .navigation
+    section .navigation /* Styling and postioning for the navigation of the video section */
     {
         position: absolute;
         bottom: 40px;
@@ -265,13 +265,13 @@
         
     }
 
-    .vid-thumb
+    .vid-thumb  /* Styling for the navigation thumbnails */
     {
         height: 150px;
         width: auto;
     }
 
-    section .navigation li
+    section .navigation li /* Styling and positioning for the navigation thumbnails */
     {
         list-style: none;
         cursor: pointer;
@@ -282,20 +282,20 @@
         transition: 0.3s;
 
     }
-    section .navigation li:hover
+    section .navigation li:hover /* hover effect for thumbnails */
     {
         transform: scale(1.08);
         opacity: 1;
     }
 
-    section .navigation li img
+    section .navigation li img /* sizing for thumbnails */
     {
         width: 100px;
         height: auto;
         max-width: 5vw;
         
     }
-    .videographer
+    .videographer /* Styling and positioning for screen right */
     {
         position: relative;
         width: 50vw;
@@ -308,7 +308,7 @@
         
     }
 
-    #profile-quote
+    #profile-quote /* Positioning and sizing for quote picture */
     {
         max-width: 100%;
         width: 70%;
