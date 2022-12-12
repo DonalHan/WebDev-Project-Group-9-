@@ -375,24 +375,25 @@
 
     .footer1{
         border-radius: 50%; /* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
-        height: 100;
-        width: 100%;
+        height: 90%;
+        width: 90%;
     }  
     .footer2{
         border-radius: 50%;
-        height: 100;
-        width: 100%;
+        height: 90%;
+        width: 90%;
     }  
 
     .footer3{
         border-radius: 50%;
-        height: 100;
-        width: 100%;
+        height: 90%;
+        width: 90%;
     }
 
     .footer4{
         border-radius: 50%;
-
+        height: 90%;
+        width: 90%;
     }
 
 
