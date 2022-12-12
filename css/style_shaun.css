@@ -122,7 +122,7 @@
     bottom: 0px;
     width: 100%;
     height: 8%;
-    z-index: -1;
+    z-index: 100;
     }
         
     
@@ -153,6 +153,8 @@
     justify-content: center;
     gap: 90px;
     height: 700px; 
+    margin-bottom: 150px;
+    
     }
 
 
@@ -172,6 +174,7 @@
     padding-top:15px; /* padding top increases the spare size of the box outside from content */
     margin-top: 35px; /* margin top pushes the whole box down to be more central on the page */
     height: 420px;
+
     }
 
 
@@ -372,24 +375,24 @@
 
     .footer1{
         border-radius: 50%; /* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
-        height: 80%;
+        height: auto;
         width: 80%;
     }  
     .footer2{
         border-radius: 50%;
-        height: 80%;
+        height: auto;
         width: 80%;
     }  
 
     .footer3{
         border-radius: 50%;
-        height: 80%;
+        height: auto;
         width: 80%;
     }
 
     .footer4{
         border-radius: 50%;
-        height: 80%;
+        height: auto;
         width: 80%;
     }
 
