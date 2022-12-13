@@ -39,17 +39,18 @@
     allowance made for 'triple barreled' domains like like @student.ncirl.ie
     */
 
-    function emailValidation() {
-    // line below calling the regexp test() method directly to the value of email in bookingform
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value)) 
+    function emailValidation()
     {
-    // console message if boolean value returns true, email matches regular expression
-    // console message used to not create unnecessary clutter on true result
-    console.log('User provided a valid EMail'); 
+        // line below calling the regexp test() method directly to the value of email in bookingform
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(bookingform.mail.value)) 
+        {
+        // console message if boolean value returns true, email matches regular expression
+        // console message used to not create unnecessary clutter on true result
+        console.log('User provided a valid EMail'); 
         return (true)
-    }
-    // create jquery warning if values don't match regexp acceptable values
-    new Simplert("error", "Please enter a valid e-mail address.").show(); 
+        }
+        // create jquery warning if values don't match regexp acceptable values
+        new Simplert("error", "Please enter a valid e-mail address.").show(); 
         return (false)
     }
 
@@ -68,10 +69,10 @@
         // conditional if name does not equal to the acceptable values in var regName
         if(!regName.test(name)){ 
             new Simplert("error", 'Please provide your first and last name').show();
-            document.getElementById(name).focus();
+            document.getElementById(name).focus(); // this line will stop script asking for both name and email to be entered if none are provided. focus only at name field
             return false;
         }else{
-            console.log('User provided a valid name'); 
+            console.log('User provided a valid name'); // small message in console just to valid that script works and proper format used
             return true;
         }
     }
@@ -86,7 +87,7 @@
     */
 
     function videoalert() // function will create a small notice when User selects videography using Jquery 'Simplerts' 
-        {
+    {
         if  (document.getElementById('dropdown2').value ==="3"){ // conditional to ensure function only happens once dropdown item with value 3 selected (videography) */
             new Simplert ("success",'Due to popular demand and extensive set-up requirements at least three weeks notice is required \
              for those wishing to avail of our videography services.\
