@@ -1,118 +1,78 @@
- 
  /* NAVIGATION BAR STYLING------------------------------------------------------------------------------------------------------------------ */
- 
-    /* Setting the font Primary font family as Helvetica (Secondary: Times new Roman) */
-    html, body 
-    {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+
+ /* Setting the font Primary font family as Helvetica (Secondary: Times new Roman) */
+ html, body {
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0px;
+ }
+
+ /* Universal page padding for every page is set to 120px due to nav bar fixed position */
+ body {
+     padding-top: 4vw;
+     margin-bottom: 100px;
+     clear: both;
+ }
+
+ /* Styling for the top naviagtion bar, some animation smoothing put in for scroll event */
+ .main-nav {
+     display: flex;
+     top: 0;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     width: 100%;
+     height: 5vw;
+     background-color: #f8f5f5;
+     transition: all 300ms ease-in-out;
+     z-index: 100;
+ }
+
+ /* Styling for the logo */
+ .logo {
+     height: 3vw;
+     width: auto;
+     margin-top: 10px;
+     margin-left: 50px;
+     transition: all 300ms ease-in-out;
+ }
+
+ /* An appendment class for styling nav bar when the user scrolls */
+ .small {
+     height: 50px;
+ }
+
+ /* An appendment class for styling the logo when the user scrolls */
+ .logo-small {
+     height: 25px;
+ }
+
+ /* Styling for the navigation links */
+ .nav-links {
+     font-weight: bolder;
+     text-decoration: none;
+     color: #8d7e73;
+     padding: 1vw;
+     font-size: 1vw;
+
+ }
+/* styling for nav link hover */
+ .nav-links:hover {
+     font-size: 1.1vw;
+     color: black;
+ }
+
+ /* Postioning nav links */
+ .links {
+     margin-right: 50px;
+ }
 
 
-    }
+/* FOOTER STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
 
-    /* Universal page padding for every page is set to 120px due to nav bar fixed position */
-    body 
-    {
-        padding-top: 4vw;
-        margin-bottom: 100px;
-        clear: both;
-    }
-
-    /* Styling for the top naviagtion bar, some animation smoothing put in for scroll event */
-    .main-nav
-    {
-    display: flex;
-    top: 0;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 5vw;
-    background-color: #FAF9F8;
-    transition: all 300ms ease-in-out;
-    z-index: 100;
-    }
-
-    /* Styling for the logo */
-    .logo 
-    {
-    height: 3vw;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 50px;
-    transition: all 300ms ease-in-out;
-    }
-
-    /* An appendment class for styling nav bar when the user scrolls */
-    .small
-    {
-    height: 50px;
-    }
-
-    /* An appendment class for styling the logo when the user scrolls */
-    .logo-small
-    {
-    height: 25px; 
-    }
-
-    /* Styling for the navigation links */
-    .nav-links
-    {
-    font-weight: bolder;
-    text-decoration: none;
-    color: #9E8C80;
-    padding: 1vw;
-    font-size: 1vw;
-
-    }
-
-    .nav-links:hover
-    {
-    font-size: 1.1vw;
-    color: black;
-    }
-
-    /* Postioning nav links */
-    .links
-    {
-    margin-right: 50px;
-    }
-
-    /* PACKAGE STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
-
-    .pagecontainer{
-    height: 100%;
-    width: 100%;
-    }
-
-    .backpack {
-    background-image: url('/images/Packages_BG.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    }
-    
-    
-    .packagebox {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }
-
-
-    .packcontainer {
-    display:flex;
-
-    gap:120px;
-    }
-
-
-    .footercontainer {
+/* grey box spanning bottom of page */
+.footercontainer {
     padding-top: 10px;
-    padding-bottom: 2px;
+    vertical-align: middle;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: row;
@@ -122,309 +82,259 @@
     bottom: 0px;
     width: 100%;
     height: 8%;
-    z-index: 100;
-    }
-        
-    
-    .footericons {
+    z-index: 999;
+}
+
+/* small box containing icons, flexbox used to keep responsiveness */
+.footericonbox {
     display: flex;
-    gap: 50px;
-    z-index: -1;
-    }
+    gap: 90px; /* gap between icons */
+    z-index: 999;
+}
+
+/* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
+.footericon {
+    border-radius: 50%;  
+    width: auto;
+    height: auto;
+    z-index: 999;
+}
+
+
+/* small hover effect increase scale, shadow for some additional clarity */
+.footericon:hover { 
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+
+ /* PACKAGE PAGE SHAUN ------------------------------------------------------------------------------------------------*/
+
+
+/* defines page, important to keep footer on page */
+ .pagecontainer {  
+     height: 100%;
+     width: 100%;
+}
+
+/* background image for packages page */
+ .backpack {
+     background-image: url('/images/Packages_BG.jpg');
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+/* box containing packages for all of the packaging offers */
+ .packagebox { 
+     margin-top: 60px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+/* container for individual packages */
+ .packcontainer { 
+     display: flex;
+     gap: 120px;
+     margin-left: 35px;
+     margin-right: 35px;
+ }
+
+ /* picture 1 * normally would use only class 'p/picture' for these, but one photo has slightly different contrast so will keep seperate */
+ .p1 {
+    filter: contrast(90%);
+    height: 36vw;
+    width: auto;
+
+}
+
+/* picture 2 */
+.p2 {
+    filter: contrast(90%);
+    height: 36vw;
+    width: auto;
+
+}
+
+/* picture 3 */
+.p3 {
+    filter: contrast(90%);
+    height: 36vw;
+    width: auto;
+
+}
+
+/* picture 1 hover */
+.p1:hover {
+    filter: contrast(120%);
+    transition-duration: 0.5s;
+}
+
+/* picture 2 hover */
+.p2:hover {
+    filter: contrast(110%);
+    transition-duration: 0.5s;
+}
+
+/* picture 2 hover */
+.p3:hover {
+    filter: contrast(120%);
+    transition-duration: 0.5s;
+}
 
 
 
- /* BOOKING STYLE-SHAUN ------------------------------------------------------------------------------------------------*/
+ /* BOOKING PAGE-SHAUN ------------------------------------------------------------------------------------------------*/
 
-    .backbook {
-    background-image: url('/images/Bookings_BG.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
+ /* background image for bookings page */
+ .backbook {
+     background-image: url('/images/Bookings_BG.jpg'); 
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-repeat: no-repeat;
 
-    }
-
-
-    .bookingbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 90px;
-    height: 700px; 
-    margin-bottom: 150px;
-    
-    }
+ }
 
 
-    .bookingimg{
-    width: 30%;
-    height: 100%;
-    }
+/* box containing content for booking page */
+ .bookingbox {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 90px;
+     height: 745px;
+     margin-bottom: 100px;
+ }
 
+/* form containing fields for User input */
+ #bookingform {
+     color: #881D50;
+     font-family: Helvetica, sans-serif;
+     border-radius: 10px;
+     background: #F0ECE9;
+     padding-left: 12px;
+     padding-top: 15px;
+     margin-top: 40px; /* margin top pushes entire box down */
+     height: 420px;
+ }
 
-    #bookingform { /* formatting for the form on order page */
-    text-align: center;
-    color: #881D50;
+/* google maps embed */
+ iframe {
+     margin-top: 25px;
+     display: flex;
+     flex-direction: row;
+     height: 260px;
+     width: 420px;
+     border-radius: 10px;
+ }
+
+ /* Order form reset button */
+ .clearbtn {
+     height: 40px;
+     width: auto;
+     transition: .5s;
+     border-radius: 3px;
+     margin-left: 5px;
+     background-color: #13aa52;
+     border: 1px solid #13aa52;
+     border-radius: 4px;
+     box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+     box-sizing: border-box;
+     color: #fff;
+     cursor: pointer;
+     font-family: Helvetica, sans-serif;
+     font-size: 16px;
+     font-weight: 700;
+     padding: 10px 25px;
+     text-align: center;
+ }
+
+ /* clear button hover */
+ .clearbtn:hover {
+     transform: scale(1.02);
+     cursor: pointer;
+     filter: contrast(1.2);
+ }
+
+/* order form submit button */
+ .sendbtn {
+    height: 40px;
+    width: auto;
+    transition: .5s;
+    border-radius: 3px;
+    margin-left: 193px;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
     font-family: Helvetica, sans-serif;
-    border-radius: 10px;
-    background: #F0ECE9;
-    padding-left:12px;
-    padding-top:15px; /* padding top increases the spare size of the box outside from content */
-    margin-top: 35px; /* margin top pushes the whole box down to be more central on the page */
-    height: 420px;
-
-    }
-
-
-    iframe{
-
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    height: 260px;
-    width: 420px;
-    border-radius: 10px;
-    }
-
-
-/* Order Page Buttons */
-
-    
-    .clearbtn {
-    height: 40px;
-    width: auto;
-    transition: .5s;
-    border-radius: 3px;
-    margin-left: 5px;
-    background-color: #13aa52;
-    border: 1px solid #13aa52;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    outline: 0;
+    font-weight: 700;
     padding: 10px 25px;
     text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    }
+ }
 
 
-    @media (min-width: 768px) {
-    .clearbtn {
-    padding: 10px 30px;
-    }
-    }
-        
-
-    .clearbtn:hover
-    {
-    transform: scale(1.02);
-    cursor: pointer;
-    filter: contrast(1.2);
-    }
+/* order form submit button */
+ .sendbtn:hover {
+     transform: scale(1.02);
+     cursor: pointer;
+     filter: contrast(1.2);
+ }
 
 
-    .sendbtn{
-    height: 40px;
-    width: auto;
-    transition: .5s;
-    margin-left: 180px;
-    border-radius: 3px;
-    background-color: #13aa52;
-    border: 1px solid #13aa52;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    outline: 0;
-    padding: 10px 25px;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    }
-      
-      
-    @media (min-width: 768px) {
-    .sendbtn {
-    padding: 10px 30px;
-    }
-    }
-
-
-    .sendbtn:hover{
-    transform: scale(1.02);
-    cursor: pointer;
-    filter: contrast(1.2);
-    }
-
-    /* Booking page gallery effect */
-
-    .container {
+ /* Booking page gallery effect container */
+ .container {
     display: flex;
     width: 70%;
-    height: 113.5%; /* height of the images */
-    margin-left: -50px; /* makes images fill entire page, remove to have it more central with background as border */
-    margin-top: -40px; /* makes images fill entire page, remove to have it more central with background as border */
+    height: 113.5%;  /* height of the images */
+    margin-left: -50px; /* these margin settings allow gallery to take up page - looks better */
+    margin-top: -40px; 
     box-sizing: border-box;
-    }
+ }
 
-
-    .box {
+/* box containing images */
+ .box {
     flex: 1;
     overflow: hidden;
     transition: .5s;
-    margin: 0 0%; /* gap between photos, set 0% to remove gap */ 
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    margin: 0 0%; /* gap between photos, set to 0% to remove gap */
+
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
     line-height: 0;
-    }
-    
-
-    .box > img {
-    width: 200%; /* horizontal zoom */
-    height: calc(100%); /* setting to 200% keeps unhovered image higher up, set to 200% to massively increase vertical zoom */
-    object-fit: cover; 
-    transition: .5s;
-    }
-      
-
-    .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-    }
-      
-
-    .box:hover {
-    flex: 1 1 50%;
-    }
+ }
 
 
-    .box:hover > img {
-    width: 100%;
-    height: 100%;
-    }
+ .box>img {
+     width: 200%;     /* horizontal zoom */
+     height: calc(100%); /* setting to 200% keeps unhovered image higher up, set to 200% to massively increase vertical zoom. looks better @ 100% */
+     object-fit: cover;
+     transition: .5s;
+ }
+
+/* flex effect to cover other images on hover */
+ .box:hover {
+     flex: 1 1 50%;
+ }
+
+/* keep width and height on hover - stops over zoom on hover */
+ .box:hover>img {
+     width: 100%;
+     height: 100%;
+ }
 
 
-
-    .p1 {
-    filter: contrast(90%);
-    height: 100%;
-    width: 100%;
-
-    }
-
-
-    .p2 {
-    filter: contrast(90%);
-    height: 100%;
-    width: 100%;
-
-    }
-
-
-    .p3 {
-    filter: contrast(90%);
-    height: 100%;
-    width: 100%;
-
-    }
-
-
-    .p1:hover {
-    filter: contrast(120%);
-    transition-duration: 0.5s;
-    }
-
-
-    .p2:hover {
-    filter: contrast(110%);
-    transition-duration: 0.5s;
-    }
-
-
-    .p3:hover {
-    filter: contrast(120%);
-    transition-duration: 0.5s;
-    }
-
-
-    .footer1{
-        border-radius: 50%; /* images were circular pngs but for some reason appeared square. border radius 50% workout makes them rounded */
-        height: 90%;
-        width: 90%;
-    }  
-    .footer2{
-        border-radius: 50%;
-        height: 90%;
-        width: 90%;
-    }  
-
-    .footer3{
-        border-radius: 50%;
-        height: 90%;
-        width: 90%;
-    }
-
-    .footer4{
-        border-radius: 50%;
-        height: 90%;
-        width: 90%;
-    }
-
-
-    .footer1:hover {
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    }
-
-
-    .footer2:hover {
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    }
-
-
-    .footer3:hover {
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    }
-
-
-    .footer4:hover {
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    }
-
-
-    #frame{ /* Stops form from refreshing the page ever time you submit. Display none hides the iframe */
-    display:none;
-    }
+ /* Important: Stops form from refreshing the page ever time you submit form. Display none hides the iframe */
+ #frame {
+     display: none;
+ }
