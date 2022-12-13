@@ -8,90 +8,87 @@
     <title>Booking</title>
     <link rel="stylesheet" href="./css/style_shaun.css">
     <link rel="stylesheet" href="./css/simplert.css">
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/simplert.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZX7HD4XKE"></script> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZX7HD4XKE"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-SZX7HD4XKE'); </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZX7HD4XKE"></script> 
+    <script> window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-SZX7HD4XKE'); </script>
+
 </head>
 
 <body class = "backbook">
     <div id="pagecontainer">
+
+        <!-- nav bar and links -->
         <nav class="main-nav">
             <a href="index.html">
-                <img class="logo" src="./images/Navigation Logo.png" alt="" aria-label="homebutton">
+                <img class="logo" src="./images/Navigation Logo.png" alt="" aria-label="homebutton"  width="189" height="64">
             </a>
-            <nav class="links">
-                <a class="nav-links" href="index.html">Home</a> 
-                <a class="nav-links" href="about.html">About</a> 
-                <a class="nav-links" href="photography.html">Photography</a> 
-                <a class="nav-links" href="video.html">Video</a>
-                <a class="nav-links" href="packages.html">Packages</a>
-                <a class="nav-links" href="bookings.html">Bookings</a>
-            </nav>
+            
+                <nav class="links">
+                    <a class="nav-links" href="index.html">Home</a> 
+                    <a class="nav-links" href="about.html">About</a> 
+                    <a class="nav-links" href="photography.html">Photography</a> 
+                    <a class="nav-links" href="video.html">Video</a>
+                    <a class="nav-links" href="packages.html">Packages</a>
+                    <a class="nav-links" href="bookings.html">Bookings</a>
+                 </nav>
         </nav>
-        
-        <script src="./javascript/script.js"></script>
-        <script src="./javascript/simplert.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    
 
+    <div class="bookingbox"> <!-- div containing the picture and the form used to contact -->
 
-
-        <div class="bookingbox"> <!-- div containing the picture and the form used to contact -->
-
-
-
-        <div class="container">
+     <div class="container"> <!-- images contained in individual div elements, allows flexbox responsive positioning in css-->
             <div class="box">
-              <img src="./images/Bookings_Photo.webp" alt="Booking_Photo_Failed">
+                <img src="./images/Bookings_Photo.webp" alt="Booking_Photo_Failed" width="100" height="100">
             </div>
             <div class="box">
-              <img src="./images/Bookings_Photo1.webp" alt="Booking_Photo_1_Failed">
+              <img src="./images/Bookings_Photo1.webp" alt="Booking_Photo_1_Failed" width="100" height="100">
             </div>
             <div class="box">
-              <img src="./images/Bookings_Photo2.webp" alt="Booking_Photo_2_Failed">
+              <img src="./images/Bookings_Photo2.webp" alt="Booking_Photo_2_Failed" width="100" height="100">
             </div>
 
-        </div>
+    </div>
         <div class="formmaps">
+            <!-- Calls two JS functions to validate name and email when user clicks submit -->
             <form name="bookingform" id="bookingform" onsubmit="return !! validateName()& emailValidation();return false" target="frame">
-            <!-- when user clicks on the submit button will call two js functions to validate input and calculate the price of the order -->
-            <!-- target frame specifies where to display response after clicking submit, in this case at the bottom, stops the form from refreshing -->
                     <div style="text-align:left">
-                        <label><strong>Name:</strong><br><input type="text" name="name" style="width: 397px;height: 23px;" /></label><br /> <!-- username input field -->
+                        <!-- name input field -->
+                        <label><strong>Name:</strong><br><input type="text" name="name" style="width: 397px;height: 23px;" /></label><br />
                         <br />
-                        <label><strong>E-Mail:</strong><br> <input type="text" name="mail" style="width: 397px;height: 23px;" /></label><br /> <!-- password input field -->
-                        <!-- &nbsp non breaking spaces used to fine tune spacing -->
-                        <!-- 'size' changes length of input box -->
-                    </div><br />
-                            
-
-            <div style="text-align:left">
+                        <!-- email input field -->
+                        <label><strong>E-Mail:</strong><br> <input type="text" name="mail" style="width: 397px;height: 23px;" /></label><br /> 
+                    </div><br />              
+                    
+                <div style="text-align:left">
                 <label> <strong>Package:</strong><br></label>
-                <select id="dropdown2" style="width: 405px;height: 25px;"  onchange="videoalert()"> <!-- descriptor for dropdown menu, onchange calls sizealert function to bring up a warning on Supersize selection -->
-                    <option value="" disabled selected> Please Choose a package</option> <!-- disabled value stops user picking empty value, selected stops second option appearing in field on page load -->
-                    <option value="1">Branding &euro;500</option> <!-- assign a 'behind the scenes' value to our options for reference later in javascript -->
+                <select id="dropdown2" style="width: 405px;height: 25px;"  onchange="videoalert()"> <!-- jQuery message when user selects videography -->
+                    <option value="" disabled selected> Please Choose a package</option> <!-- disabled value prevents defunct option being picked -->
+                    <option value="1">Branding &euro;500</option> <!-- assigning a value not important for first two options, option 3 used to prompt jQuery alert -->
                     <option value="2">Photography &euro;700</option>
                     <option value="3">Videography- &euro;1200</option>
                 </select> 
-            <div>
-                <br>
-
-            <div style="text-align: left"> <!-- Quantity field layout below -->
-                <label><strong> Message:</strong><br>
-                <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea></label>
+            <div><br>
             
+
+            <div style="text-align: left"> <!-- message field layout below -->
+                <label><strong> Message:</strong><br>
+                <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea></label> <!-- create text box size -->
             </div><br>
         
             
-            <input class="clearbtn" type="reset"  name="reset" value="Reset"  /> <!-- a button to reset all fields somebody might have entered if they want to change their order -->
-            <input class="sendbtn" type="submit"  name="submit" value="Submit"  /> <!-- the submit button which calls the functions listed above -->
-            <!-- after pressing submit, the total cost will pop up below the button, if you enter the discount code WOW22 it will apply discount -->
+            <input class="clearbtn" type="reset"  name="reset" value="Reset"  /> <!-- button to clear all fields -->
+            <input class="sendbtn" type="submit"  name="submit" value="Submit"  /> <!-- the submit button which calls validation functions -->
             
             <br></br>
-            <iframe title="frame" name="frame" id="frame"></iframe> 
+            <iframe title="frame" name="frame" id="frame"></iframe> <!-- this iframe inserted into the form and hidden stops page refresh on clicking submit -->
             </form> <!-- form concludes -->
 
 
 
-
+            <!-- google maps embed link-->
             <iframe title="googlemaps" name="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6828970906945!2d-6.245181483978436!3d53.
             348932382218315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20
             College%20of%20Ireland!5e0!3m2!1sen!2suk!4v1670557092415!5m2!1sen!2suk" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
@@ -100,13 +97,14 @@
     </div>
 </div>
 
-
+<!-- footer box spanning page -->
 <footer class="footercontainer">
+    <!-- icon box -->
     <div class="footericonbox">
-        <a href ="https://twitter.com/"><img class="footericon" src="/images/twitter.png"  alt="social-1 Failed to load" width="55" height="55"></a>
-        <a href ="https://youtube.com/"><img class="footericon" src="/images/youtube.png"  alt="social-2 Failed to load" width="55" height="55"></a>
-        <a href ="https://instagram.com/"><img class="footericon" src="/images/insta.png"  alt="social-3 Failed to load" width="55" height="55"></a>
-        <a href ="https://facebook.com/"><img class="footericon" src="/images/fb.png"  alt="social-4 Failed to load" width="55" height="55"></a>
+        <a href ="https://twitter.com/"><img class="footericon" src="/images/twitter.png"  alt="social-1 Failed to load" width="65" height="65"></a>
+        <a href ="https://youtube.com/"><img class="footericon" src="/images/youtube.png"  alt="social-2 Failed to load" width="65" height="65"></a>
+        <a href ="https://instagram.com/"><img class="footericon" src="/images/insta.png"  alt="social-3 Failed to load" width="65" height="65"></a>
+        <a href ="https://facebook.com/"><img class="footericon" src="/images/fb.png"  alt="social-4 Failed to load" width="65" height="65"></a>
    </div>
 </footer>
     
