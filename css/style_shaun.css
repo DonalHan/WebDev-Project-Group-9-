@@ -148,24 +148,24 @@
  /* picture 1 * normally would use only class 'p/picture' for these, but one photo has slightly different contrast so will keep seperate */
  .p1 {
     filter: contrast(90%);
-    height: 100%;
-    width: 100%;
+    height: 36vw;
+    width: auto;
 
 }
 
 /* picture 2 */
 .p2 {
     filter: contrast(90%);
-    height: 100%;
-    width: 100%;
+    height: 36vw;
+    width: auto;
 
 }
 
 /* picture 3 */
 .p3 {
     filter: contrast(90%);
-    height: 100%;
-    width: 100%;
+    height: 36vw;
+    width: auto;
 
 }
 
