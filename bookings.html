@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- defines how text is coded and stored-->
     <meta charset="UTF-8">
+    <!-- compatibility resource for IE  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- tag assisting with responsiveness. Set viewport to the device width i.e fit screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags to indicate to crawler what kind of content we have on site-->
     <meta name="description" content="Tasty Treat - Food Stylists. We do:  Food Photography, Food Videography, as well as advertisements for fast food companies ,  and drink ads " class="seo-meta-tag" >
     <title>Booking</title>
+    <!-- css style sheets, one for page one for Jquery alert -->
     <link rel="stylesheet" href="./css/style_shaun.css">
     <link rel="stylesheet" href="./css/simplert.css">
+    <!-- javascript files -->
     <script src="./javascript/script.js"></script>
     <script src="./javascript/simplert.js"></script>
+    <!-- jQuery import -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZX7HD4XKE"></script> 
+    <!-- SEO optimization via gtags -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZX7HD4XKE"></script> 
     <script> window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-SZX7HD4XKE'); </script>
 
 </head>
 
 <body class = "backbook">
+    
+    <!-- div to define page dimensions in css -->
     <div id="pagecontainer">
 
         <!-- nav bar and links -->
@@ -37,80 +46,75 @@
         </nav>
     
 
-    <div class="bookingbox"> <!-- div containing the picture and the form used to contact -->
+        <div class="bookingbox"> <!-- div containing the picture gallery -->
 
-     <div class="container"> <!-- images contained in individual div elements, allows flexbox responsive positioning in css-->
-            <div class="box">
+            <div class="container"> <!-- images contained in individual div elements, allows flexbox responsive positioning in css-->
+                <div class="box">
                 <img src="./images/Bookings_Photo.webp" alt="Booking_Photo_Failed" width="100" height="100">
-            </div>
-            <div class="box">
-              <img src="./images/Bookings_Photo1.webp" alt="Booking_Photo_1_Failed" width="100" height="100">
-            </div>
-            <div class="box">
-              <img src="./images/Bookings_Photo2.webp" alt="Booking_Photo_2_Failed" width="100" height="100">
+                </div>
+                    <div class="box">
+                    <img src="./images/Bookings_Photo1.webp" alt="Booking_Photo_1_Failed" width="100" height="100">
+                    </div>
+                        <div class="box">
+                        <img src="./images/Bookings_Photo2.webp" alt="Booking_Photo_2_Failed" width="100" height="100">
+                        </div>
             </div>
 
-    </div>
-        <div class="formmaps">
-            <!-- Calls two JS functions to validate name and email when user clicks submit -->
-            <form name="bookingform" id="bookingform" onsubmit="return !! validateName()& emailValidation();return false" target="frame">
+
+            <div class="formmaps"> <!-- div containing both the form div and the google map embed iframe -->
+                <!-- Calls two JS functions to validate name and email when user clicks submit -->
+                <form name="bookingform" id="bookingform" onsubmit="return !! validateName()& emailValidation();return false" target="frame">
                     <div style="text-align:left">
                         <!-- name input field -->
                         <label><strong>Name:</strong><br><input type="text" name="name" style="width: 397px;height: 23px;" /></label><br />
                         <br />
                         <!-- email input field -->
                         <label><strong>E-Mail:</strong><br> <input type="text" name="mail" style="width: 397px;height: 23px;" /></label><br /> 
-                    </div><br />              
+                    </div><br/>              
                     
-                <div style="text-align:left">
-                <label> <strong>Package:</strong><br></label>
-                <select id="dropdown2" style="width: 405px;height: 25px;"  onchange="videoalert()"> <!-- jQuery message when user selects videography -->
-                    <option value="" disabled selected> Please Choose a package</option> <!-- disabled value prevents defunct option being picked -->
-                    <option value="1">Branding &euro;500</option> <!-- assigning a value not important for first two options, option 3 used to prompt jQuery alert -->
-                    <option value="2">Photography &euro;700</option>
-                    <option value="3">Videography- &euro;1200</option>
-                </select> 
-            <div><br>
+                    <div style="text-align:left">
+                        <label> <strong>Package:</strong><br></label>
+                        <select id="dropdown2" style="width: 405px;height: 25px;"  onchange="videoalert()"> <!-- jQuery message when user selects videography -->
+                        <option value="" disabled selected> Please Choose a package</option> <!-- disabled value prevents defunct option being picked -->
+                        <option value="1">Branding &euro;500</option> <!-- assigning a value not important for first two options, option 3 used to prompt jQuery alert -->
+                        <option value="2">Photography &euro;700</option>
+                        <option value="3">Videography- &euro;1200</option></select>                
+                    <div><br>
             
 
-            <div style="text-align: left"> <!-- message field layout below -->
-                <label><strong> Message:</strong><br>
-                <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea></label> <!-- create text box size -->
-            </div><br>
+                    <div style="text-align: left"> <!-- message field layout below -->
+                        <label><strong> Message:</strong><br>
+                        <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea></label> <!-- create text box size -->
+                    </div><br>
         
-            
-            <input class="clearbtn" type="reset"  name="reset" value="Reset"  /> <!-- button to clear all fields -->
-            <input class="sendbtn" type="submit"  name="submit" value="Submit"  /> <!-- the submit button which calls validation functions -->
-            
-            <br></br>
-            <iframe title="frame" name="frame" id="frame"></iframe> <!-- this iframe inserted into the form and hidden stops page refresh on clicking submit -->
-            </form> <!-- form concludes -->
+                    <input class="clearbtn" type="reset"  name="reset" value="Reset"  /> <!-- button to clear all fields -->
+                    <input class="sendbtn" type="submit"  name="submit" value="Submit"  /> <!-- the submit button which calls validation functions -->
+                    <br></br>
+
+                    <iframe title="frame" name="frame" id="frame"></iframe> <!-- this iframe inserted into the form and hidden stops page refresh on clicking submit -->
+                </form> <!-- form concludes -->
 
 
+                <!-- google maps embed link-->
+                <iframe title="googlemaps" name="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6828970906945!2d-6.245181483978436!3d53.
+                348932382218315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20
+                College%20of%20Ireland!5e0!3m2!1sen!2suk!4v1670557092415!5m2!1sen!2suk" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
+            </div>
 
-            <!-- google maps embed link-->
-            <iframe title="googlemaps" name="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6828970906945!2d-6.245181483978436!3d53.
-            348932382218315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20
-            College%20of%20Ireland!5e0!3m2!1sen!2suk!4v1670557092415!5m2!1sen!2suk" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
         </div>
 
     </div>
-</div>
 
-<!-- footer box spanning page -->
-<footer class="footercontainer">
-    <!-- icon box -->
-    <div class="footericonbox">
+    <!-- footer box spanning page -->
+    <footer class="footercontainer">
+        <!-- icon box -->
+        <div class="footericonbox">
         <a href ="https://twitter.com/"><img class="footericon" src="/images/twitter.png"  alt="social-1 Failed to load" width="65" height="65"></a>
         <a href ="https://youtube.com/"><img class="footericon" src="/images/youtube.png"  alt="social-2 Failed to load" width="65" height="65"></a>
         <a href ="https://instagram.com/"><img class="footericon" src="/images/insta.png"  alt="social-3 Failed to load" width="65" height="65"></a>
         <a href ="https://facebook.com/"><img class="footericon" src="/images/fb.png"  alt="social-4 Failed to load" width="65" height="65"></a>
-   </div>
-</footer>
+        </div>
+    </footer>
     
 </body>
-
-
-
-</div>
 </html>
