@@ -152,7 +152,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 90px;
-    height: 700px; 
+    height: 741px; 
     margin-bottom: 150px;
     
     }
@@ -207,7 +207,7 @@
     cursor: pointer;
     font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     outline: none;
     outline: 0;
     padding: 10px 25px;
@@ -250,7 +250,7 @@
     cursor: pointer;
     font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     outline: none;
     outline: 0;
     padding: 10px 25px;
