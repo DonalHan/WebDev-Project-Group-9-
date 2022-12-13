@@ -55,16 +55,16 @@
             <!-- when user clicks on the submit button will call two js functions to validate input and calculate the price of the order -->
             <!-- target frame specifies where to display response after clicking submit, in this case at the bottom, stops the form from refreshing -->
                     <div style="text-align:left">
-                        <strong><label for="text">Name:</label></strong><br><input type="text" name="name" style="width: 397px;height: 23px;" /><br /> <!-- username input field -->
+                        <label><strong>Name:</strong><br><input type="text" name="name" style="width: 397px;height: 23px;" /></label><br /> <!-- username input field -->
                         <br />
-                        <strong><label for="email">E-Mail:</label></strong><br> <input type="text" name="mail" style="width: 397px;height: 23px;" /><br /> <!-- password input field -->
+                        <label><strong>E-Mail:</strong><br> <input type="text" name="mail" style="width: 397px;height: 23px;" /></label><br /> <!-- password input field -->
                         <!-- &nbsp non breaking spaces used to fine tune spacing -->
                         <!-- 'size' changes length of input box -->
                     </div><br />
                             
 
             <div style="text-align:left">
-                <strong><label for="checkbox">Package:</label></strong><br>
+                <label> <strong>Package:</strong><br></label>
                 <select id="dropdown2" style="width: 405px;height: 25px;"  onchange="videoalert()"> <!-- descriptor for dropdown menu, onchange calls sizealert function to bring up a warning on Supersize selection -->
                     <option value="" disabled selected> Please Choose a package</option> <!-- disabled value stops user picking empty value, selected stops second option appearing in field on page load -->
                     <option value="1">Branding &euro;500</option> <!-- assign a 'behind the scenes' value to our options for reference later in javascript -->
@@ -75,8 +75,8 @@
                 <br>
 
             <div style="text-align: left"> <!-- Quantity field layout below -->
-                 <strong> <label for="text">Message:</label></strong><br>
-                <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea>
+                <label><strong> Message:</strong><br>
+                <textarea name="quantity" id="quantity" maxlength="8000" style="width: 400px;height: 120px;"></textarea></label>
             
             </div><br>
         
